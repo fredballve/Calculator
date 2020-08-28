@@ -21,9 +21,9 @@ def num_clicked(num):
     if label_ans["text"]!='' or (num == "3.14159265" and label_op["text"]=='') or (num == "2.71828182" and label_op["text"]==''):
         clearall()
 
-    if len(label_in1["text"])==1 and label_in1["text"][0]=="0" and label_op["text"]=="":
+    if len(label_in1["text"])==1 and label_in1["text"][0]=="0" and label_op["text"]=="" and num!=".":
         label_in1["text"]=label_in1["text"][1:-1]
-    if len(label_in2["text"])==1 and label_in2["text"][0]=="0" and label_op["text"]=="":
+    if len(label_in2["text"])==1 and label_in2["text"][0]=="0" and label_op["text"]=="" and num!=".":
         label_in2["text"]=label_in2["text"][1:-1]
         
 
